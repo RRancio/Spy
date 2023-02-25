@@ -35,7 +35,6 @@ def on_press(event):
     active_window = gw.getActiveWindow()
     if active_window is not None:
         window_title = active_window.title
-        # Use the saved start time in the RPC.update() call
         RPC.update(
         details=f"Typed: {acc}",
         state=f"Times pressed: {key_press_count}", 
